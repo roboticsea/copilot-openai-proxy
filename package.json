@@ -1,0 +1,30 @@
+{
+  "name": "copilot-openai-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js serve",
+    "dev": "tsx src/main.ts serve",
+    "test": "tsx --test test/**/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "auth:login": "tsx src/main.ts auth:login",
+    "auth:logout": "tsx src/main.ts auth:logout",
+    "auth:status": "tsx src/main.ts auth:status"
+  },
+  "dependencies": {
+    "@microsoft/copilot-sdk": "2.0.3",
+    "@napi-rs/keyring": "2.1.2",
+    "fastify": "5.12.8",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.11",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}
