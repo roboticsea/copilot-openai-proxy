@@ -1,5 +1,7 @@
 # Copilot OpenAI proxy
 
+***This is offered as-is and I do not plan to extend this project further.  Hopefully the Unsloth Desktop team will add Github Copilot as an officially supported provider.  In the meantime, you can use this proxy as a bridge between Unsloth Desktop and Github Copilot.  I have personally tested this for model selection, chat, and tool calling/use (was fun getting it to work with how Unsloth handles tool calls).  This codebase has also been reviewed/mitigated of security vulnerabilities (not saying there aren't any at all, obviously, but it's pretty solid).  Use at your own risk.  It works on MacOS.  I haven't tested Ubuntu yet, but it probably works.  `-robotsea`***
+
 A loopback-only OpenAI Chat Completions proxy backed by GitHub Copilot. It exposes model declarations and forwards Unsloth function-tool calls without executing them. Tool execution remains in Unsloth's existing sandbox.
 
 ## Requirements
